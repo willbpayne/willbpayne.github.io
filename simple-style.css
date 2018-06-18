@@ -1,0 +1,54 @@
+body {
+	background-color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica", "Arial", sans-serif;
+	color: #39FF14;
+}
+
+p { font-size: small; }
+
+h6 {
+	font-size: xx-small;
+}
+
+h5 {
+	font-size: smaller;
+}
+
+h4 {
+	font-size: small;
+}
+
+h3 {
+	font-size: medium;
+}
+
+h2 {
+	font-size: large;
+	font-weight: bold;
+}
+
+p {
+	font-size: larger;
+	font-weight: bolder;
+}
+
+figcaption{
+	text-transform: uppercase;
+}
+
+img {
+	border: solid;
+	border-width: 10px;
+	border-color: white;
+}
+
+a:active {
+	color: red;
+}
+
+a:hover {
+	background: green;
+}
