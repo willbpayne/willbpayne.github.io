@@ -46,9 +46,19 @@ img {
 }
 
 a:active {
-	color: red;
+	color: #1439FF;
+}
+
+a:link {
+	color: #1439FF; 
+	text-decoration: underline; 
+}
+
+a:visited {
+	color: #1439FF; 
+	text-decoration: underline; 
 }
 
 a:hover {
-	background: green;
+	background: white;
 }
