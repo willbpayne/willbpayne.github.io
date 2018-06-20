@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Leaflet Map</title>
+	<meta charset="utf-8" />
+	<link
+		rel="stylesheet"
+		href="css/leaflet.css"
+	/>
+</head>
+<body>
+	<div id="map" style="width: 1152px; height: 864px"></div>
+
+	<script src="js/leaflet.js"></script>
+
+	<script>
+		var map = L.map('map').setView([37.875, -122.26], 16);
+		mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+
+		L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			{	attribution: 'Map data &copy; ' + mapLink,
+				minZoom: 12,
+				maxZoom: 18,
+			}).addTo(map);
+
+		var marker = L.marker([37.874, -122.2596],
+			{	draggable: true,
+				title: "This is the spot",
+				opacity: 0.75
+			})
+		marker.addTo(map)
+			.bindPopup("<p><b>UC Berkeley</b><br>McCone Hall</p>")
+			.openPopup();
+	</script>
+</body>
+</html>
